@@ -1,0 +1,26 @@
+public class SDFTAREA : MonoBehaviour
+{
+    public int VidaActual = 100;
+    public int DañoRecibido = 70;
+    void Start()
+    {
+        int Vidafinal = VidaActual - DañoRecibido;
+
+        if (Vidafinal > 30)
+        {
+            Debug.Log("Jugador Estable");
+        }
+        else if (Vidafinal == 0)
+        {
+            Debug.Log("Jugador Muerto");
+        }
+        else if (Vidafinal < 30)
+        {
+            Debug.Log("jugador en peligro");
+        }
+        else
+        {
+            Debug.Log("Game Over");
+        }
+        
+    }
