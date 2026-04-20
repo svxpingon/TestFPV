@@ -1,0 +1,18 @@
+public class SDFTAREA3 : MonoBehaviour
+{
+    public bool tieneLlave;
+    public bool EspacioDisponible;
+    void Start()
+    {
+       bool PuedeAbrir = tieneLlave && EspacioDisponible;
+
+        if (PuedeAbrir)
+        { 
+            Debug.Log("Cofre Abierto");
+        }
+        else
+        {
+            Debug.Log("No puede abrir este cofre");
+        }
+
+    }
