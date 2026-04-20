@@ -1,0 +1,13 @@
+public class SDFTAREA2 : MonoBehaviour
+{
+    public int EnergiaActual = 100;
+    public int CostoDeHabilidad = 40;
+
+
+    void Start()
+    {
+        int EnergiaFinal = EnergiaActual - CostoDeHabilidad;
+        Debug.Log("Energia restate: " + EnergiaFinal);
+     
+        
+    }
